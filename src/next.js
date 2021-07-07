@@ -35,7 +35,11 @@ export default function Next() {
       {cart.length > 0 && (
         <button onClick={() => clearCart()}>Clear Cart</button>
       )}
-      <h3 style={{ textAlign: 'center' }}>$ {getCost()}</h3>
+      {cart == 0 ? (
+        <p />
+      ) : (
+        <h3 style={{ textAlign: 'center' }}>$ {getCost()}</h3>
+      )}
     </>
   );
 }
