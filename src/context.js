@@ -1,8 +1,8 @@
 import React, { useState, createContext } from 'react';
 
 export const context = createContext(null);
-
 let hi = JSON.parse(localStorage.getItem('str'));
+
 
 export const State = props => {
   const [cart, setCart] = useState(hi);
